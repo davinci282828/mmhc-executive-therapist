@@ -350,56 +350,50 @@
 
   /* === EXECUTIVE CTA SECTION (above contact form) === */
   .exec-cta-section {
-    background: linear-gradient(135deg, #1a3a2a 0%, #2d5a3d 50%, #1a3a2a 100%);
+    background: #f5f5f0;
     padding: 80px 0; position: relative; overflow: hidden;
-  }
-  .exec-cta-section::before {
-    content: ''; position: absolute; inset: 0;
-    background: radial-gradient(ellipse at 30% 50%, rgba(139,195,74,0.08) 0%, transparent 60%),
-                radial-gradient(ellipse at 80% 20%, rgba(61,140,92,0.1) 0%, transparent 50%);
-    pointer-events: none;
   }
   .exec-cta-inner {
     max-width: 800px; margin: 0 auto; text-align: center;
     position: relative; z-index: 1;
   }
   .exec-cta-badge {
-    display: inline-block; background: rgba(139,195,74,0.2);
-    color: var(--accent-green); font-size: 12px; font-weight: 700;
+    display: inline-block; background: var(--mint);
+    color: var(--dark-green); font-size: 12px; font-weight: 700;
     letter-spacing: 1.5px; text-transform: uppercase;
     padding: 6px 18px; border-radius: 50px; margin-bottom: 24px;
   }
   .exec-cta-inner h2 {
-    color: var(--white); font-size: 36px; margin-bottom: 20px;
+    color: var(--dark-green); font-size: 36px; margin-bottom: 20px;
   }
   .exec-cta-inner p {
-    color: #b8d4c4; font-size: 18px; line-height: 1.7;
+    color: var(--text-body); font-size: 18px; line-height: 1.7;
     margin-bottom: 12px;
   }
   .exec-cta-inner .emphasis {
-    color: var(--white); font-weight: 600; font-size: 19px;
+    color: var(--dark-green); font-weight: 600; font-size: 19px;
     margin-bottom: 32px;
   }
   .exec-cta-stats {
     display: flex; justify-content: center; gap: 40px;
     margin: 32px 0; padding: 24px 0;
-    border-top: 1px solid rgba(255,255,255,0.1);
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid var(--border-light);
+    border-bottom: 1px solid var(--border-light);
   }
   .exec-cta-stat { text-align: center; }
-  .exec-cta-stat .num { font-size: 28px; font-weight: 800; color: var(--accent-green); }
-  .exec-cta-stat .label { font-size: 13px; color: #8aaa98; margin-top: 4px; }
+  .exec-cta-stat .num { font-family: 'DM Serif Display', Georgia, serif; font-size: 28px; font-weight: 700; color: var(--dark-green); }
+  .exec-cta-stat .label { font-size: 13px; color: var(--text-muted); margin-top: 4px; }
   .exec-cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
   .exec-cta-buttons .btn-primary {
-    background: var(--accent-green); color: var(--dark-green) !important;
+    background: var(--green-btn); color: var(--white) !important;
     font-size: 17px; padding: 16px 36px;
   }
-  .exec-cta-buttons .btn-primary:hover { background: #7CB342; }
+  .exec-cta-buttons .btn-primary:hover { background: var(--dark-green); }
   .exec-cta-buttons .btn-outline {
-    border-color: rgba(255,255,255,0.4); color: var(--white) !important;
+    border-color: var(--dark-green); color: var(--dark-green) !important;
     font-size: 17px; padding: 14px 32px;
   }
-  .exec-cta-buttons .btn-outline:hover { background: rgba(255,255,255,0.08); border-color: var(--white); }
+  .exec-cta-buttons .btn-outline:hover { background: var(--mint); }
 
   /* === NUMBERED LIST === */
   .numbered-list { list-style: none; counter-reset: item; padding: 0; }
@@ -460,12 +454,13 @@
     letter-spacing: 0.5px;
   }
 
-  /* === CONTACT SECTION (standardized) === */
+  /* === CONTACT SECTION (standardized — white like Healthfirst) === */
   .contact-section {
-    background: var(--dark-green); padding: 72px 0;
+    background: var(--white); padding: 72px 0;
+    border-top: 1px solid var(--border-light);
   }
-  .contact-section h2 { color: var(--white); }
-  .contact-section p { color: rgba(255,255,255,0.85); }
+  .contact-section h2 { color: var(--dark-green); }
+  .contact-section p { color: var(--text-body); }
   .contact-grid {
     display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start;
   }
@@ -568,7 +563,7 @@
 <section class="hero">
   <div class="container">
     <div class="hero-image">
-      <img src="hero.png" alt="Executive professional sitting with calm confidence in a modern office" width="600" height="600">
+      <img src="hero.jpg" alt="Executive professional with calm, centered presence" width="600" height="600">
     </div>
     <div class="hero-text">
       <h1>How to Tell If a Therapist Is a Good Fit for Executives in NYC</h1>
