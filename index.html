@@ -7,7 +7,7 @@
 <meta name="description" content="Looking for an executive therapist in NYC? Learn how to evaluate fit, confidentiality, and experience, then book a confidential executive intake.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=DM+Serif+Display&display=swap" rel="stylesheet">
 
 <!-- Schema Markup -->
 <script type="application/ld+json">
@@ -137,38 +137,45 @@
     line-height: 1.7; margin-bottom: 28px;
   }
 
-  /* Clinical review bar — below hero */
-  .clinical-review-bar {
-    background: var(--mint-light); border-bottom: 1px solid var(--border-light);
-    padding: 10px 0; text-align: center;
-  }
-  .clinical-review-bar p {
-    max-width: var(--max-width); margin: 0 auto; padding: 0 24px;
-    font-size: 13px; color: var(--text-muted);
-  }
-
-  /* === STATS BANNER (same as Healthfirst) === */
+  /* === STATS BANNER (exact match to Healthfirst) === */
   .stats-banner {
-    background: var(--mint);
-    padding: 32px 0;
+    background: var(--white);
+    padding: 40px 0;
+    position: relative;
+    overflow: hidden;
   }
   .stats-banner .container {
     max-width: var(--max-width);
     margin: 0 auto; padding: 0 24px;
+    position: relative;
+  }
+  .stats-banner::before {
+    content: '';
+    position: absolute;
+    width: 160px; height: 300%;
+    background: #8BE06A;
+    top: -100%; left: 55%;
+    transform: rotate(-55deg);
+    z-index: 0;
   }
   .stats-row {
     display: flex; justify-content: center; align-items: stretch;
-    background: var(--mint-light);
-    border-radius: 16px; overflow: hidden;
-    border: 1px solid rgba(27,58,45,0.08);
+    background: #EAF2EA;
+    border-radius: 14px; overflow: hidden;
+    border: 2px solid var(--dark-green);
+    position: relative; z-index: 1;
   }
   .stat-item {
-    flex: 1; text-align: center; padding: 24px 16px;
-    border-right: 1px solid rgba(27,58,45,0.1);
+    flex: 1; text-align: center; padding: 28px 24px;
+    border-right: 1.5px solid var(--dark-green);
   }
   .stat-item:last-child { border-right: none; }
-  .stat-number { font-size: 28px; font-weight: 800; color: var(--dark-green); }
-  .stat-label { font-size: 14px; color: var(--text-muted); margin-top: 4px; }
+  .stat-number {
+    font-family: 'DM Serif Display', Georgia, serif;
+    font-size: 38px; font-weight: 700; color: var(--dark-green);
+    line-height: 1.1;
+  }
+  .stat-label { font-size: 15px; color: var(--dark-green); margin-top: 6px; font-weight: 400; }
 
   /* === SECTIONS === */
   .container { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
@@ -571,12 +578,7 @@
   </div>
 </section>
 
-<!-- ===== CLINICAL REVIEW BAR (below hero) ===== -->
-<div class="clinical-review-bar">
-  <p>Clinically reviewed by <a href="https://manhattanmentalhealthcounseling.com/meet-the-founders/">Natalie Buchwald, LMHC-D</a> &nbsp;|&nbsp; Last Updated: April 9, 2026 &nbsp;|&nbsp; Next Review: June 2026</p>
-</div>
-
-<!-- ===== STATS BANNER (same as Healthfirst) ===== -->
+<!-- ===== STATS BANNER (exact match to Healthfirst) ===== -->
 <section class="stats-banner">
   <div class="container">
     <div class="stats-row">
